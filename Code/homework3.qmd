@@ -75,7 +75,7 @@ data_summary |> #use summarized dataframe
   gt() |> #use gt package
   cols_label( #set column names
     week_day = "Weekday",
-    mean = "Mean", 
+    mean = "Mean (Gallons)", 
   ) |> 
   tab_header( #add table title
     title = "Mean Water Usage Summary"

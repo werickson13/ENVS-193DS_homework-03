@@ -1,10 +1,17 @@
 ---
 title: "Homework_3_ENVS193DS"
-format: html
+author: "Wyatt Erickson"
+date: 5/28/2025
+project:
+  output-dir: docs
+format:
+  html: 
+    toc: true #display table of contents
+    execute:
+message: false #do not display messages
 editor: visual
+warning: false #do not display warnings
 ---
-
-Wyatt Erickson
 
 <https://github.com/werickson13/ENVS-193DS_homework-03.git>
 

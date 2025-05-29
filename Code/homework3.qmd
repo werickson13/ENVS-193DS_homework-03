@@ -9,12 +9,12 @@ Wyatt Erickson
 <https://github.com/werickson13/ENVS-193DS_homework-03.git>
 
 ```{r setup, message = FALSE, warning = FALSE}
-library(tidyverse)
+library(tidyverse) #load packages
 library(gt)
 library(here)
 library(janitor)
 library(knitr)
-water_data <- read.csv("~/Git/ENVS-193DS_homework-03/Data/ENVS193_data.csv")
+water_data <- read.csv("~/Git/ENVS-193DS_homework-03/Data/ENVS193_data.csv") #load in data
 ```
 
 ## Problem 1. Personal Data
@@ -81,7 +81,7 @@ data_summary |> #use summarized dataframe
   tab_header( #add table title
     title = "Mean Water Usage Summary"
   ) |> 
-  tab_style(
+  tab_style( #make column labels bold
     style = cell_text(weight = "bold"),
     locations = cells_column_labels(columns = everything())
   )
@@ -112,3 +112,7 @@ In the above visualization, the relationship between daily water usage is shown 
 The authors are using an ANOVA test to analyze differences in gravel sphericity and roundness between different terraces and locations. In terraces with a statistically significant difference from one another, they are represented with an r, meaning that the null hypothesis for that specific relationship is rejected. This analysis of variance compares mean grain size values throughout the river, and determines if the difference in these means is due to chance, or truly dependent on how upstream or downstream each grain is.
 
 ![](images/table.png)
+
+#### b. Visual Clarity
+
+The table does a good job representing and conveying the results of the ANOVA test, and showing what values are and are not statistically significant. The key at the bottom efficiently elaborates key details of this description.
